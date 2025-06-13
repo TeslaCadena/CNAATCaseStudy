@@ -71,6 +71,30 @@
             position: sticky;
             top: 2rem;
         }
+        
+        /* Image placeholder styling */
+        .image-placeholder {
+            position: relative;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-center: center;
+            border-radius: 0.5rem;
+        }
+        
+        .image-placeholder::after {
+            content: "Replace with your image";
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -170,12 +194,14 @@
                         At the 2024 Child Nutrition Access and Accountability through Technology (CNAAT) conference, I led the full strategy, execution, and promotion of PrimeroEdge's presence—driving the brand's largest reception yet and exceeding lead generation goals. This out-of-state event required cross-functional alignment, real-time logistics management, and strict adherence to USDA branding regulations.
                     </p>
                     
-                    <div class="aspect-w-16 aspect-h-9 mt-8">
-                        <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
+                    <!-- REPLACE THIS DIV with your overview image -->
+                    <div class="image-placeholder w-full h-64 mt-8">
+                        <!-- Replace the SVG and this entire div with your image: 
+                        <img src="path/to/your/overview-image.jpg" alt="CNAAT Conference Overview" class="w-full h-auto rounded-lg"> 
+                        -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
                     </div>
                 </section>
                 
@@ -186,20 +212,20 @@
                         <h2 class="text-2xl font-bold">Results</h2>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <!-- Thought Leadership Card -->
                         <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
                             <div class="flex items-center justify-between mb-4">
-                                <h3 class="font-semibold text-gray-600">Event Presence</h3>
-                                <i class="fas fa-users text-green-600"></i>
+                                <h3 class="font-semibold text-gray-600">Thought Leadership</h3>
+                                <i class="fas fa-lightbulb text-green-600"></i>
                             </div>
                             <div class="space-y-3">
                                 <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 expert-led presentations</p>
                                 <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 live software demos</p>
-                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> "Tech & Taste" reception with 40+ attendees</p>
-                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 10-person team presence</p>
                             </div>
                         </div>
                         
+                        <!-- Lead Generation Card -->
                         <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
                             <div class="flex items-center justify-between mb-4">
                                 <h3 class="font-semibold text-gray-600">Lead Generation</h3>
@@ -211,6 +237,19 @@
                             </div>
                         </div>
                         
+                        <!-- Tech & Taste Reception Card -->
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-semibold text-gray-600">Tech & Taste Reception</h3>
+                                <i class="fas fa-glass-cheers text-green-600"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 40+ prospect attendees</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 10-person team presence</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Financial Impact Card -->
                         <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
                             <div class="flex items-center justify-between mb-4">
                                 <h3 class="font-semibold text-gray-600">Financial Impact</h3>
@@ -302,7 +341,11 @@
                         </blockquote>
                         <span class="quote-mark right">"</span>
                         <div class="flex items-center mt-6 pl-6">
+                            <!-- REPLACE THIS DIV with manager photo if available -->
                             <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <!-- Replace with: 
+                                <img src="path/to/your/manager-photo.jpg" alt="Manager" class="w-12 h-12 rounded-full object-cover"> 
+                                -->
                                 <i class="fas fa-user text-green-600"></i>
                             </div>
                             <div class="ml-4">
@@ -321,12 +364,19 @@
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                        <!-- REPLACE THESE DIVs with your process images -->
+                        <div class="image-placeholder h-64">
+                            <!-- Replace with: 
+                            <img src="path/to/your/process-image1.jpg" alt="Process Image 1" class="w-full h-full object-cover rounded-lg"> 
+                            -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                         </div>
-                        <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                        <div class="image-placeholder h-64">
+                            <!-- Replace with: 
+                            <img src="path/to/your/process-image2.jpg" alt="Process Image 2" class="w-full h-full object-cover rounded-lg"> 
+                            -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
