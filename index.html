@@ -1,441 +1,425 @@
-`html
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f8f9fa;
-        color: #333;
-        scroll-behavior: smooth;
-    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeroEdge Lead Generating Tech Conference Management (2024) | Tesla Cadena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a8a3d 0%, #2ecc71 100%);
+        }
+        
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .view-option {
+            transition: all 0.3s ease;
+        }
+        
+        .view-option:hover {
+            transform: translateY(-3px);
+        }
+        
+        .quote-mark {
+            font-size: 4rem;
+            line-height: 0;
+            position: absolute;
+            color: rgba(46, 204, 113, 0.15);
+        }
+        
+        .quote-mark.left {
+            top: 20px;
+            left: 10px;
+        }
+        
+        .quote-mark.right {
+            bottom: 0;
+            right: 10px;
+        }
+        
+        .toc-link {
+            transition: all 0.2s ease;
+        }
+        
+        .toc-link:hover {
+            color: #2ecc71;
+            transform: translateX(3px);
+        }
+        
+        .toc-link.active {
+            color: #2ecc71;
+            font-weight: 500;
+        }
+        
+        .sticky-toc {
+            position: sticky;
+            top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20 px-4 md:px-0">
+        <div class="container mx-auto max-w-5xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">PrimeroEdge Lead Generating Tech Conference Management (2024)</h1>
+            <p class="text-xl opacity-90 max-w-3xl">How I drove PrimeroEdge's largest reception yet and exceeded lead generation goals at a major industry conference.</p>
+        </div>
+    </header>
     
-    .gradient-bg {
-        background: linear-gradient(135deg, #0a8a3d 0%, #2ecc71 100%);
-    }
+    <!-- View Options -->
+    <section class="bg-white py-8 px-4 md:px-0 border-b">
+        <div class="container mx-auto max-w-5xl">
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <span class="mr-2">3️⃣</span> Ways to View This Case Study
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="#" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="bg-green-100 p-3 rounded-full mb-3">
+                            <i class="fas fa-file-pdf text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium mb-1">Download PDF</h4>
+                        <p class="text-sm text-gray-600">Full detailed case study document</p>
+                    </a>
+                    <a href="https://issuu.com/teslacannon/docs/lead_generating_conference_management?fr=sYTFkYzg0OTMwMzY" target="_blank" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="bg-green-100 p-3 rounded-full mb-3">
+                            <i class="fas fa-book-open text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium mb-1">Read as Booklet</h4>
+                        <p class="text-sm text-gray-600">Interactive flipbook experience</p>
+                    </a>
+                    <a href="#case-content" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
+                        <div class="bg-green-100 p-3 rounded-full mb-3">
+                            <i class="fas fa-scroll text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium mb-1">Scroll Below</h4>
+                        <p class="text-sm text-gray-600">Read abbreviated version here</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    .stat-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .stat-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    
-    .view-option {
-        transition: all 0.3s ease;
-    }
-    
-    .view-option:hover {
-        transform: translateY(-3px);
-    }
-    
-    .quote-mark {
-        font-size: 4rem;
-        line-height: 0;
-        position: absolute;
-        color: rgba(46, 204, 113, 0.15);
-    }
-    
-    .quote-mark.left {
-        top: 20px;
-        left: 10px;
-    }
-    
-    .quote-mark.right {
-        bottom: 0;
-        right: 10px;
-    }
-    
-    .toc-link {
-        transition: all 0.2s ease;
-    }
-    
-    .toc-link:hover {
-        color: #2ecc71;
-        transform: translateX(3px);
-    }
-    
-    .toc-link.active {
-        color: #2ecc71;
-        font-weight: 500;
-    }
-    
-    .sticky-toc {
-        position: sticky;
-        top: 2rem;
-    }
-    
-    /* Image placeholder styling */
-    .image-placeholder {
-        position: relative;
-        overflow: hidden;
-        background-color: #f0f0f0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.5rem;
-    }
-    
-    .image-placeholder::after {
-        content: "Replace with your image";
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.6);
-        color: white;
-        padding: 5px;
-        font-size: 12px;
-        text-align: center;
-    }
-</style>
-<!-- View Options -->
-<section class="bg-white py-8 px-4 md:px-0 border-b">
-    <div class="container mx-auto max-w-5xl">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold mb-4 flex items-center">
-                <span class="mr-2">3️⃣</span> Ways to View This Case Study
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <a href="#" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
-                    <div class="bg-green-100 p-3 rounded-full mb-3">
-                        <i class="fas fa-file-pdf text-green-600 text-xl"></i>
+    <!-- Main Content with Table of Contents -->
+    <div id="case-content" class="container mx-auto max-w-5xl py-12 px-4 md:px-0">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Table of Contents (Sidebar) -->
+            <div class="md:w-1/4">
+                <div class="bg-white p-6 rounded-lg shadow-md sticky-toc">
+                    <h3 class="text-lg font-semibold mb-4 pb-2 border-b border-gray-200">Table of Contents</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#overview" class="toc-link flex items-center text-gray-700 hover:text-green-600">
+                                <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#results" class="toc-link flex items-center text-gray-700 hover:text-green-600">
+                                <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
+                                Results
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#my-role" class="toc-link flex items-center text-gray-700 hover:text-green-600">
+                                <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
+                                My Role
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#praise" class="toc-link flex items-center text-gray-700 hover:text-green-600">
+                                <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
+                                Praise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#process-gallery" class="toc-link flex items-center text-gray-700 hover:text-green-600">
+                                <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
+                                Process Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="md:w-3/4">
+                <!-- Overview Section -->
+                <section id="overview" class="mb-16 scroll-mt-24">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-1 bg-green-600 mr-4"></div>
+                        <h2 class="text-2xl font-bold">Overview</h2>
                     </div>
-                    <h4 class="font-medium mb-1">Download PDF</h4>
-                    <p class="text-sm text-gray-600">Full detailed case study document</p>
-                </a>
-                <a href="https://issuu.com/teslacannon/docs/lead_generating_conference_management?fr=sYTFkYzg0OTMwMzY" target="_blank" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
-                    <div class="bg-green-100 p-3 rounded-full mb-3">
-                        <i class="fas fa-book-open text-green-600 text-xl"></i>
+                    <p class="text-lg leading-relaxed mb-6">
+                        At the 2024 Child Nutrition Access and Accountability through Technology (CNAAT) conference, I led the full strategy, execution, and promotion of PrimeroEdge's presence—driving the brand's largest reception yet and exceeding lead generation goals. This out-of-state event required cross-functional alignment, real-time logistics management, and strict adherence to USDA branding regulations.
+                    </p>
+                    
+                    <div class="aspect-w-16 aspect-h-9 mt-8">
+                        <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
                     </div>
-                    <h4 class="font-medium mb-1">Read as Booklet</h4>
-                    <p class="text-sm text-gray-600">Interactive flipbook experience</p>
-                </a>
-                <a href="#case-content" class="view-option bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center hover:bg-gray-50">
-                    <div class="bg-green-100 p-3 rounded-full mb-3">
-                        <i class="fas fa-scroll text-green-600 text-xl"></i>
+                </section>
+                
+                <!-- Results Section -->
+                <section id="results" class="mb-16 scroll-mt-24">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-1 bg-green-600 mr-4"></div>
+                        <h2 class="text-2xl font-bold">Results</h2>
                     </div>
-                    <h4 class="font-medium mb-1">Scroll Below</h4>
-                    <p class="text-sm text-gray-600">Read abbreviated version here</p>
-                </a>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-semibold text-gray-600">Event Presence</h3>
+                                <i class="fas fa-users text-green-600"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 expert-led presentations</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 live software demos</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> "Tech & Taste" reception with 40+ attendees</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 10-person team presence</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-semibold text-gray-600">Lead Generation</h3>
+                                <i class="fas fa-chart-line text-green-600"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 9 qualified leads</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 booked demos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-semibold text-gray-600">Financial Impact</h3>
+                                <i class="fas fa-dollar-sign text-green-600"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> $200K projected revenue</p>
+                                <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 689% estimated ROI</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- My Role Section -->
+                <section id="my-role" class="mb-16 scroll-mt-24">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-1 bg-green-600 mr-4"></div>
+                        <h2 class="text-2xl font-bold">My Role</h2>
+                    </div>
+                    
+                    <p class="text-lg mb-6">
+                        I managed all aspects of the event—from internal team prep to external marketing:
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-paint-brush text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Brand Experience</h3>
+                            </div>
+                            <p>Built a branded experience despite heavy USDA restrictions</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-plane text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Logistics</h3>
+                            </div>
+                            <p>Coordinated travel, shipping, and vendor logistics</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-bullhorn text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Marketing</h3>
+                            </div>
+                            <p>Created social and email campaigns for pre/post-show outreach</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-palette text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Design</h3>
+                            </div>
+                            <p>Designed all collateral, including presentations and flyers</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-users-cog text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Team Alignment</h3>
+                            </div>
+                            <p>Facilitated team alignment with detailed FAQs and checklists</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Testimonial Section -->
+                <section id="praise" class="mb-16 scroll-mt-24">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-1 bg-green-600 mr-4"></div>
+                        <h2 class="text-2xl font-bold">Praise</h2>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md relative">
+                        <span class="quote-mark left">"</span>
+                        <blockquote class="text-xl italic text-gray-700 mb-4 relative z-10 px-6">
+                            Thank you Tesla for being the leader that you are. Now everyone knows like I do, that nothing gets done without you!
+                        </blockquote>
+                        <span class="quote-mark right">"</span>
+                        <div class="flex items-center mt-6 pl-6">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="font-semibold">Direct Manager</p>
+                                <p class="text-sm text-gray-600">PrimeroEdge</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Process Gallery -->
+                <section id="process-gallery" class="mb-16 scroll-mt-24">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-1 bg-green-600 mr-4"></div>
+                        <h2 class="text-2xl font-bold">Process Gallery</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- CTA Section -->
+                <section class="bg-gradient-to-r from-green-600 to-green-400 text-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold mb-4">Want to see more of my work?</h2>
+                        <p class="mb-6">Check out my other case studies or get in touch to discuss your project.</p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="https://teslacadena.com" target="_blank" class="bg-white text-green-600 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-briefcase mr-2"></i> View Portfolio
+                            </a>
+                            <a href="https://calendly.com/teslacadena" target="_blank" class="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-calendar-alt mr-2"></i> Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-</section>
-
-<!-- Main Content with Table of Contents -->
-<div id="case-content" class="container mx-auto max-w-5xl py-12 px-4 md:px-0">
-    <div class="flex flex-col md:flex-row gap-8">
-        <!-- Table of Contents (Sidebar) -->
-        <div class="md:w-1/4">
-            <div class="bg-white p-6 rounded-lg shadow-md sticky-toc">
-                <h3 class="text-lg font-semibold mb-4 pb-2 border-b border-gray-200">Table of Contents</h3>
-                <ul class="space-y-3">
-                    <li>
-                        <a href="#overview" class="toc-link flex items-center text-gray-700 hover:text-green-600">
-                            <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
-                            Overview
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#results" class="toc-link flex items-center text-gray-700 hover:text-green-600">
-                            <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
-                            Results
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#my-role" class="toc-link flex items-center text-gray-700 hover:text-green-600">
-                            <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
-                            My Role
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#praise" class="toc-link flex items-center text-gray-700 hover:text-green-600">
-                            <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
-                            Praise
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#process-gallery" class="toc-link flex items-center text-gray-700 hover:text-green-600">
-                            <i class="fas fa-circle text-xs mr-2 text-green-500"></i>
-                            Process Gallery
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Main Content -->
-        <div class="md:w-3/4">
-            <!-- Overview Section -->
-            <section id="overview" class="mb-16 scroll-mt-24">
-                <div class="flex items-center mb-6">
-                    <div class="w-12 h-1 bg-green-600 mr-4"></div>
-                    <h2 class="text-2xl font-bold">Overview</h2>
-                </div>
-                <p class="text-lg leading-relaxed mb-6">
-                    At the 2024 Child Nutrition Access and Accountability through Technology (CNAAT) conference, I led the full strategy, execution, and promotion of PrimeroEdge's presence—driving the brand's largest reception yet and exceeding lead generation goals. This out-of-state event required cross-functional alignment, real-time logistics management, and strict adherence to USDA branding regulations.
-                </p>
-                
-                <!-- REPLACE THIS DIV with your overview image -->
-                <div class="image-placeholder w-full h-64 mt-8">
-                    <!-- Replace the SVG and this entire div with your image: 
-                    <img src="path/to/your/overview-image.jpg" alt="CNAAT Conference Overview" class="w-full h-auto rounded-lg"> 
-                    -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                </div>
-            </section>
-            
-            <!-- Results Section -->
-            <section id="results" class="mb-16 scroll-mt-24">
-                <div class="flex items-center mb-8">
-                    <div class="w-12 h-1 bg-green-600 mr-4"></div>
-                    <h2 class="text-2xl font-bold">Results</h2>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-semibold text-gray-600">Event Presence</h3>
-                            <i class="fas fa-users text-green-600"></i>
-                        </div>
-                        <div class="space-y-3">
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 expert-led presentations</p>
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 live software demos</p>
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> "Tech & Taste" reception with 40+ attendees</p>
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 10-person team presence</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-semibold text-gray-600">Lead Generation</h3>
-                            <i class="fas fa-chart-line text-green-600"></i>
-                        </div>
-                        <div class="space-y-3">
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 9 qualified leads</p>
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 2 booked demos</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card bg-white p-6 rounded-lg shadow-md border-t-4 border-green-600">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-semibold text-gray-600">Financial Impact</h3>
-                            <i class="fas fa-dollar-sign text-green-600"></i>
-                        </div>
-                        <div class="space-y-3">
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> $200K projected revenue</p>
-                            <p class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 689% estimated ROI</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- My Role Section -->
-            <section id="my-role" class="mb-16 scroll-mt-24">
-                <div class="flex items-center mb-8">
-                    <div class="w-12 h-1 bg-green-600 mr-4"></div>
-                    <h2 class="text-2xl font-bold">My Role</h2>
-                </div>
-                
-                <p class="text-lg mb-6">
-                    I managed all aspects of the event—from internal team prep to external marketing:
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-2 rounded-full mr-3">
-                                <i class="fas fa-paint-brush text-green-600"></i>
-                            </div>
-                            <h3 class="font-semibold">Brand Experience</h3>
-                        </div>
-                        <p>Built a branded experience despite heavy USDA restrictions</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-2 rounded-full mr-3">
-                                <i class="fas fa-plane text-green-600"></i>
-                            </div>
-                            <h3 class="font-semibold">Logistics</h3>
-                        </div>
-                        <p>Coordinated travel, shipping, and vendor logistics</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-2 rounded-full mr-3">
-                                <i class="fas fa-bullhorn text-green-600"></i>
-                            </div>
-                            <h3 class="font-semibold">Marketing</h3>
-                        </div>
-                        <p>Created social and email campaigns for pre/post-show outreach</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-2 rounded-full mr-3">
-                                <i class="fas fa-palette text-green-600"></i>
-                            </div>
-                            <h3 class="font-semibold">Design</h3>
-                        </div>
-                        <p>Designed all collateral, including presentations and flyers</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-2 rounded-full mr-3">
-                                <i class="fas fa-users-cog text-green-600"></i>
-                            </div>
-                            <h3 class="font-semibold">Team Alignment</h3>
-                        </div>
-                        <p>Facilitated team alignment with detailed FAQs and checklists</p>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Testimonial Section -->
-            <section id="praise" class="mb-16 scroll-mt-24">
-                <div class="flex items-center mb-8">
-                    <div class="w-12 h-1 bg-green-600 mr-4"></div>
-                    <h2 class="text-2xl font-bold">Praise</h2>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md relative">
-                    <span class="quote-mark left">"</span>
-                    <blockquote class="text-xl italic text-gray-700 mb-4 relative z-10 px-6">
-                        Thank you Tesla for being the leader that you are. Now everyone knows like I do, that nothing gets done without you!
-                    </blockquote>
-                    <span class="quote-mark right">"</span>
-                    <div class="flex items-center mt-6 pl-6">
-                        <!-- REPLACE THIS DIV with manager photo if available -->
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                            <!-- Replace with: 
-                            <img src="path/to/your/manager-photo.jpg" alt="Manager" class="w-12 h-12 rounded-full object-cover"> 
-                            -->
-                            <i class="fas fa-user text-green-600"></i>
-                        </div>
-                        <div class="ml-4">
-                            <p class="font-semibold">Direct Manager</p>
-                            <p class="text-sm text-gray-600">PrimeroEdge</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Process Gallery -->
-            <section id="process-gallery" class="mb-16 scroll-mt-24">
-                <div class="flex items-center mb-8">
-                    <div class="w-12 h-1 bg-green-600 mr-4"></div>
-                    <h2 class="text-2xl font-bold">Process Gallery</h2>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- REPLACE THESE DIVs with your process images -->
-                    <div class="image-placeholder h-64">
-                        <!-- Replace with: 
-                        <img src="path/to/your/process-image1.jpg" alt="Process Image 1" class="w-full h-full object-cover rounded-lg"> 
-                        -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <div class="image-placeholder h-64">
-                        <!-- Replace with: 
-                        <img src="path/to/your/process-image2.jpg" alt="Process Image 2" class="w-full h-full object-cover rounded-lg"> 
-                        -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- CTA Section -->
-            <section class="bg-gradient-to-r from-green-600 to-green-400 text-white p-8 rounded-lg shadow-lg">
-                <div class="text-center">
-                    <h2 class="text-2xl font-bold mb-4">Want to see more of my work?</h2>
-                    <p class="mb-6">Check out my other case studies or get in touch to discuss your project.</p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="https://teslacadena.com" target="_blank" class="bg-white text-green-600 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
-                            <i class="fas fa-briefcase mr-2"></i> View Portfolio
-                        </a>
-                        <a href="https://calendly.com/teslacadena" target="_blank" class="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
-                            <i class="fas fa-calendar-alt mr-2"></i> Schedule a Call
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-12 px-4 md:px-0 mt-16">
-    <div class="container mx-auto max-w-5xl">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-2xl font-bold mb-2">Tesla Cadena</h3>
-                <p class="text-gray-400">Marketing & Event Management Professional</p>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://calendly.com/teslacadena" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
-                    <i class="fas fa-calendar-alt"></i>
-                </a>
-            </div>
-        </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-            <p>&copy; 2024 Tesla Cadena. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
     
-    // Active link highlighting for TOC
-    const sections = document.querySelectorAll('section[id]');
-    const tocLinks = document.querySelectorAll('.toc-link');
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 md:px-0 mt-16">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Tesla Cadena</h3>
+                    <p class="text-gray-400">Marketing & Event Management Professional</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://calendly.com/teslacadena" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                        <i class="fas fa-calendar-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Tesla Cadena. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
-    window.addEventListener('scroll', () => {
-        let current = '';
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
         
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
-            const sectionHeight = section.clientHeight;
+        // Active link highlighting for TOC
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
             
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
-            }
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
         });
-        
-        tocLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
-                link.classList.add('active');
-            }
-        });
-    });
-</script>
+    </script>
+</body>
+</html>
